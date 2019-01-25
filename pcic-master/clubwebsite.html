@@ -1,272 +1,240 @@
 <html>
+
 <head>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
- <script type="text/javascript" src="./js/jquery.cycle.lite.js"></script> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
     <meta charset="utf-8" />
     <title>PCSHIC</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
     <meta property="og:title" content="INFOR 31st 板中資訊社 第31屆" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://infor.org/" />
-    <meta property="og:image" content="https://infor.org/images/infor.png" />
     <meta property="og:description" content="新北市立板橋高級中學 New Taipei Municipal Banqiao Senior High School 資訊社 第三十屆" />
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
-    <!-- Tocas UI：CSS 與元件 -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocas-ui/2.3.3/tocas.css" /> 
-    <!-- Tocas JS：模塊與 JavaScript 函式 -->
-    <script src="tocas.js"></script>
-    <script src="IE.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocas-ui/2.3.3/tocas.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
-    <link rel="stylesheet" href="./infor31.css">
-	
-	<style>
-.parallax {
-  /* The image used */
-  background-image: url("picture/img_parallax.jpg");
-
-  /* Set a specific height */
-  min-height: 300px; 
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-</style>
-<style>
-.parallax2 {
-  /* The image used */
-  background-image: url("picture/5.jpg");
-
-  /* Set a specific height */
-  min-height: 300px; 
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-</style>
-	
-	<script>
- function keyFunction() {
-	
-	//if ((event.altKey) && (event.keyCode==17)) document.location.href="https://www.pornhub.com/";
-}
-document.onkeydown=keyFunction;
-</script>
-<script>
-function openCity(evt, cityName) {
-  document.getElementById('cadre').style.display = "none";
-  document.getElementById('Introduction').style.display = "none";
-  document.getElementById('Experience').style.display = "none";
-  document.getElementById(cityName).style.display = "block";
-}
-</script>
+    <script>
+        document.onkeydown = () => {
+            if ((event.altKey) && (event.keyCode == 17)) document.location.href = "https://www.pornhub.com/";
+        };
+    </script>
+    <style>
+        .parallax {
+            background-image: url("picture/img_parallax.jpg");
+            min-height: 300px;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .parallax2 {
+            background-image: url("picture/5.jpg");
+            min-height: 300px;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
 </head>
+
+
 <body>
     <div class="ts overlapped right sidebar vertical menu">
         <a class="right aligned item"><i class="close icon"></i></a>
     </div>
-        <div class="ts fluid secondary menu" id="bannerMenu">
-            <div class="ts container">
-                <a class="item" href="https://www.pornhub.com/">INFOR</a>
-                <div class="tablet or large device only right menu">
-                    <a class="item" href="http://www.pcsh.ntpc.edu.tw/">本校首頁</a>
-                    <a class="item" href="https://sites.google.com/site/pcshic/">教學平台</a>
-                    <a class="item" href="https://zerojudge.tw/">ZeroJudge</a>
-                </div>
-                <a class="mobile only right item"><i class="sidebar icon"></i></a>
+    <div class="ts fluid secondary menu" id="bannerMenu">
+        <div class="ts container">
+            <a class="item" href="https://www.pornhub.com/">INFOR</a>
+            <div class="tablet or large device only right menu">
+                <a class="item" href="http://www.pcsh.ntpc.edu.tw/">本校首頁</a>
+                <a class="item" href="https://sites.google.com/site/pcshic/">教學平台</a>
+                <a class="item" href="https://zerojudge.tw/">ZeroJudge</a>
+            </div>
+            <a class="mobile only right item"><i class="sidebar icon"></i></a>
+        </div>
+    </div>
+
+    <header class="ts center aligned large fluid slate" id="banner">
+        <div class="image">
+            <div class="filter"></div>
+            <img src="picture/dinosaur.png" alt="恐龍" />
+        </div>
+        <span class="header animated fadeIn" style="color:#003C9D;">PCIC 30th</span>
+        <span class="description animated fadeIn">板橋高中資訊社 第30屆<br /></span>
+    </header>
+    <nav class="ts fluid pointing secondary menu" style="visibility: hidden;" id="defaultMenu">
+    </nav>
+    <section class="ts fluid container" id="clubIntro">
+        <div class="ts inner container">
+            <div class="ts huge center aligned header">
+                板中資訊社簡介
+                <div class="sub header">About us</div>
+            </div>
+
+            <div class="parallax2"></div>
+
+            <div class="ts stackable grid">
+                <nobr>
+                    <div class="six wide column">
+                        <img src="picture/mark.png" alt="introduce" class="introduce" style="margin-top:60px;margin-bottom:60px;width:400;height:400px;" />
+                    </div>
+                </nobr>
+                <nobr>
+                    <div class="ten wide column">
+                        <div class="ts padded flatted borderless inverted segment" id="introduce" style="margin-left:120px;margin-top:60px;width:400px;">
+                            <blockquote>
+                                <p>你是否有個駭客夢呢?</p>
+                                <p>你也想發現隱藏在網路下的暗潮嗎?</p>
+                                <p>你是否佩服動動手就能掌握生殺大權的人?</p>
+                                <p>你羨慕那些輕鬆就上大學的人嗎?</p>
+                                <p>還是你超喜歡寫程式呢?</p>
+                                <p>那－－你肯定會想了解我們的</p>
+                            </blockquote>
+                            <p style="text-align:right">－板橋高中資訊社</p>
+                        </div>
+                    </div>
+                </nobr>
             </div>
         </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <div class="parallax"></div>
 
-        <header class="ts center aligned large fluid slate" id="banner">
-            <div class="image">
-                <div class="filter"></div>
-                <img src="picture/dinosaur.png" alt="恐龍"/>
+    <section class="ts fluid container" id="clubIntro">
+        <div class="ts inner container">
+            <div class="ts huge center aligned header">
+                關於我們
+                <div class="sub header">由一群愛好資訊的板橋高中學生共同組成</div>
             </div>
-            <span class="header animated fadeIn" style="color:#003C9D;">ＰＣＩＣ ３０ＴＨ</span>
-            <span class="description animated fadeIn">板橋高中資訊社 第30屆<br /></span>
-        </header>
-        <nav class="ts fluid pointing secondary menu" style="visibility: hidden;" id="defaultMenu">
-        </nav>
-            <section class="ts fluid container" id="clubIntro">
-                <div class="ts inner container">
-                    <div class="ts huge center aligned header">
-                        板中資訊社簡介
-                        <div class="sub header">About us</div>
+            <div class="ts stackable grid">
+                <div class="four wide column ts inverted segment" id="tabContainer">
+                    <div class="ts tablet or large device only borderless flatted fluid secondary vertical menu" id="desktopTab">
+                        <a class="cadre item" data-tab="cadre" onclick="openCity(event, 'cadre')">
+                            <div style="color:#AAAAAA">幹部介紹</div>
+                        </a>
+                        <a class="item" data-tab="class" onclick="openCity(event, 'Introduction')">
+                            <div style="color:#AAAAAA">課程介紹</div>
+                        </a>
+                        <a class="item" data-tab="game" onclick="openCity(event, 'Experience')">
+                            <div style="color:#AAAAAA">比賽心得</div>
+                        </a>
                     </div>
-					
-					<div class="parallax2"></div>
-					
-                    <center><div class="ts stackable grid">
-                        <nobr><div class="six wide column">
-                            <img src="picture/mark.png" alt="introduce" class="introduce" style="weight:500px;height:400px;" />
-                        </div></nobr>
-                        <nobr><div class="ten wide column">
-                            <div class="ts padded flatted borderless inverted segment" id="introduce" style="margin-left:120px;margin-top:80px;width:400px;" >
-                                <blockquote >
-                                    <p ><font size="5">你是否有個駭客夢呢?</font></p>
-	                                <p>你也想發現隱藏在網路下的暗潮嗎?</p>
-	                                <p>你是否佩服動動手就能掌握生殺大權的人?</p>
-	                                <p>你羨慕那些輕鬆就上大學的人嗎?</p>
-	                                <p>還是你超喜歡寫程式呢?</p>
-                                    <p>那－－你肯定會想了解我們的</p>
-                                    <cite>－板橋高中資訊社</cite>
-                                </blockquote>
-                            </div>
-                        </div></nobr>
-                    </div></center>
+                    <div class="ts mobile only evenly divided secondary menu" id="mobileTab">
+                        <a class="cadre item" data-tab="cadre">幹部介紹</a>
+                        <a class="item" data-tab="class">課程介紹</a>
+                        <a class="item" data-tab="game">比賽心得</a>
+                    </div>
                 </div>
-            </section>
-			<br>
-			<br>
-			<br>
-			<div class="parallax"></div>
-			
-            <section class="ts fluid container" id="clubIntro">
-                <div class="ts inner container">
-                    <div class="ts huge center aligned header">
-                        關於我們
-                        <div class="sub header">由一群愛好資訊的板橋高中學生共同組成</div>
-                    </div>
-                    <div  class="ts stackable grid">
-                        <div class="four wide column ts inverted segment" id="tabContainer">
-                            <div class="ts tablet or large device only borderless flatted fluid secondary vertical menu" id="desktopTab">
-                                <a class="cadre item" data-tab="cadre" onclick="openCity(event, 'cadre')"><div style="color:#AAAAAA">幹部介紹</div></a>
-                                <a class="item" data-tab="class" onclick="openCity(event, 'Introduction')"><div style="color:#AAAAAA">課程介紹</div></a>
-								<a class="item" data-tab="game" onclick="openCity(event, 'Experience')"><div style="color:#AAAAAA">比賽心得</div></a>
+                <div class="twelve wide column" id="all">
+                    <div class="ts animated fadeIn active padded tab segment" data-tab="cadre">
+                        <div id="cadre" class="ts center aligned big header" style="display : block">
+                            <strong>幹部介紹</strong>
+                            <div style="height: 30px;"></div>
+                            <div class="sub header">
+                                <p style="font-size:15px">社長－吳邦寧<p>
                             </div>
-                            <div class="ts mobile only evenly divided secondary menu" id="mobileTab">
-                                <a class="cadre item" data-tab="cadre">幹部介紹</a>
-                                <a class="item" data-tab="class">課程介紹</a>
-								<a class="item" data-tab="game">比賽心得</a>
+                            <div class="sub header">
+                                <p style="font-size:15px">副社長－黃子睿<p>
+                            </div>
+                            <div class="sub header">
+                                <p style="font-size:15px">活動長－覃毅翔<p>
+                            </div>
+                            <div class="sub header">
+                                <p style="font-size:15px">秘書長－白翔云<p>
+                            </div>
+                            <div class="sub header">
+                                <p style="font-size:15px">公關長－廖俊瑋<p>
+                            </div>
+                            <div class="sub header">
+                                <p style="font-size:15px">美編長－林康婕<p>
+                            </div>
+                            <div class="sub header">
+                                <p style="font-size:15px">總務長－許光樺<p>
+                            </div>
+                            <div class="sub header">
+                                <p style="font-size:15px">教學長－葉俊豪<p>
                             </div>
                         </div>
-                        <div class="twelve wide column" id="all" >
-                            <div class="ts animated fadeIn active padded tab segment" data-tab="cadre" >
-								<div id = "cadre"  class="ts center aligned big header" style="display : block">
-										<strong>幹部介紹</strong>
-										<div class="sub header">
-											<p><font size="5">社長－吳邦寧</font><p>
-										</div>
-										<div class="sub header">
-											<p><font size="5">副社長－黃子睿</font><p>
-										</div>
-											<div class="sub header">
-											<p><font size="5">活動長－覃毅翔</font><p>
-										</div>
-											<div class="sub header">
-											<p><font size="5">秘書長－白翔云</font><p>
-										</div>
-										<div class="sub header">
-											<p><font size="5">公關長－廖俊瑋</font><p>
-										</div>
-										<div class="sub header">
-											<p><font size="5">美編長－林康婕</font><p>
-										</div>
-										<div class="sub header">
-											<p><font size="5">總務長－許光樺</font><p>
-										</div>
-										<div class="sub header">
-											<p><font size="5">教學長－葉俊豪</font><p>
-										</div>
-								</div>
-								<div id="Introduction" class="ts animated fadeIn padded tab segment" data-tab="class" style="display : none">
-									<div class="ts center aligned big header">
-										<strong>課程介紹</strong>
-										<body>
-										<div class="sub header">
-										<hr>
-											<font size="4">進階培訓課</font><br>
-											<font size="3">時間:每周一晚上6:00~9:00</font><br />
-											<font size="3">教學:BALEUTESHIH</font><br />
-											<hr>
-											<hr>
-											<font size="4">APCS課 CLASS FOR C++</font><br />
-											<font size="3">時間:每周二晚上6:00~9:00</font><br />
-											<font size="3">教學:SNAIL</font><br />
-									</div>
-								</div>
-                            </div>
-                            <div id="Experience" class="ts animated fadeIn padded tab segment" data-tab="games" style="display :none">
-                                <div class="ts center aligned big header">
-                                    比賽心得
+                        <div id="Introduction" class="ts animated fadeIn padded tab segment" data-tab="class" style="display : none">
+                            <div class="ts center aligned big header">
+                                <strong>課程介紹</strong>
+
+                                <body>
                                     <div class="sub header">
-									
-                                         Q1:當你遇到WA的時候，你會選擇盡全力去解WA，還是想辦法先去解其他題目?
-										 A:看時間吧，當然要自己評估浪費太多時間在同一題上會不會很不值得啊如果剩下的題目都不會顯然就是繼續解WA，
-		不然還是把其他題都穩穩拿下來比較好 而且有時候會只是小bug，至少如果第一次WA我還是會先看是不是小bug，找不到才會評估。
-		                             <br>
-									     Q2:數學好的話，打比賽的助益在哪裡?
-	                                     A:寫並查集、二分搜並不會需要用到數學，但是為什麼大部分進入資訊奧林匹亞的人數學都非常好? 
-		資訊其實有很多題目和數學相關，數學好的人會很吃香，也相對比較容易有好成績 不過數學不是很好卻當上國手的例子也是有的，曾經就有一位連二元一次聯立方程式都不是很熟的選手當上國手。
-		                             <br>
-									     Q3:請問你覺得哪個比賽對你而言意義最重大(花費最多心思在這個比賽上面)?
-	                                     A : TOI啊 ( ?
-	                               	 <br> 
-	                                     Q4:請問你覺得哪個比賽的獎品最優渥? 
-	                                     A : NPSC
-		                             <br>
-	                                     Q5:哪個比賽的題目最細膩(階段性部分分數很多)? 
-	                                     A:全國賽跟TOI差不多，都算細膩。不過APIO、IOI這種國際賽是最細的                                                                       ---------Respondent:<strong>Brian Tsai<strong></font>
-	           
+                                        <hr>
+                                        <font size="4">進階培訓課</font><br>
+                                        <font size="3">時間:每周一晚上6:00~9:00</font><br />
+                                        <font size="3">教學:BALEUTESHIH</font><br />
+                                        <hr>
+                                        <hr>
+                                        <font size="4">APCS課 CLASS FOR C++</font><br />
+                                        <font size="3">時間:每周二晚上6:00~9:00</font><br />
+                                        <font size="3">教學:SNAIL</font><br />
                                     </div>
+                            </div>
+                        </div>
+                        <div id="Experience" class="ts animated fadeIn padded tab segment" data-tab="games" style="display :none">
+                            <div class="ts center aligned big header">
+                                比賽心得
+                                <div class="sub header">
+
+                                    Q1:當你遇到WA的時候，你會選擇盡全力去解WA，還是想辦法先去解其他題目?
+                                    A:看時間吧，當然要自己評估浪費太多時間在同一題上會不會很不值得啊如果剩下的題目都不會顯然就是繼續解WA，
+                                    不然還是把其他題都穩穩拿下來比較好 而且有時候會只是小bug，至少如果第一次WA我還是會先看是不是小bug，找不到才會評估。
+                                    <br>
+                                    Q2:數學好的話，打比賽的助益在哪裡?
+                                    A:寫並查集、二分搜並不會需要用到數學，但是為什麼大部分進入資訊奧林匹亞的人數學都非常好?
+                                    資訊其實有很多題目和數學相關，數學好的人會很吃香，也相對比較容易有好成績
+                                    不過數學不是很好卻當上國手的例子也是有的，曾經就有一位連二元一次聯立方程式都不是很熟的選手當上國手。
+                                    <br>
+                                    Q3:請問你覺得哪個比賽對你而言意義最重大(花費最多心思在這個比賽上面)?
+                                    A : TOI啊 ( ?
+                                    <br>
+                                    Q4:請問你覺得哪個比賽的獎品最優渥?
+                                    A : NPSC
+                                    <br>
+                                    Q5:哪個比賽的題目最細膩(階段性部分分數很多)?
+                                    A:全國賽跟TOI差不多，都算細膩。不過APIO、IOI這種國際賽是最細的 ---------Respondent:<strong>Brian Tsai<strong></font>
+
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-			<br>
-			<br>
-			<br>
-        <footer class="ts bottom attached very padded fluid inverted segment">
-            <div class="ts inner container">
-                <div class="ts stackable relaxed grid">
-                    <div class="four wide column" >
-                        <a href="/"></a>
+            </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <footer class="ts bottom attached very padded fluid inverted segment">
+        <div class="ts inner container">
+            <div class="ts stackable relaxed grid">
+
+                <div class="three wide column">
+                    <div class="ts inverted big header">Design</div>
+                    <div class="ts inverted link list">
+                        <p>PCIC 31th</p>
+                        <p>Students:</p>
+                        <p>Liao,Yu-Hsin/Mo,Hau-Han</p>
+                        <p>since2018/10/26</p>
                     </div>
-                    <div class="five wide placeholder column">
-                        <!-- Place Holder -->
-                    </div>
-                    <div class="three wide column" >
-                        <div class="ts inverted big header">Design</div>
-                        <div class="ts inverted link list">
-                            <p>PCIC 31th</p>
-							<p>Students:</p>
-							<p>Liao,Yu-Hsin/Mo,Hau-Han</p>
-							<p>since2018/10/26</p>
-                        </div>
-                    </div>
-                    <div class="two wide column">
-                        <div class="ts inverted big header">相關網站</div>
-                        <div class="ts inverted link list">
-                            <a href="http://dinnersystem.ddns.net/dinnersys_beta/frontend/login.html" target="_blank" class="item">板橋高中午餐系統</a>
-							<p>Design by Wu,Bang-Ning</p>
-                            <a href="https://zh-tw.facebook.com/PCSHInforClub/" target="_blank" class="item">板中資訊社臉書</a>
-							<p>歡迎追蹤</p>
-                        </div>
+                </div>
+                <div style="margin:auto;"></div>
+                <div class="three wide column">
+                    <div class="ts inverted big header">相關網站</div>
+                    <div class="ts inverted link list">
+                        <a href="http://dinnersystem.ddns.net/dinnersys_beta/frontend/login.html" target="_blank" class="item">板橋高中午餐系統</a>
+                        <p>Design by Wu,Bang-Ning</p>
+                        <a href="https://zh-tw.facebook.com/PCSHInforClub/" target="_blank" class="item">板中資訊社臉書</a>
+                        <p>歡迎追蹤</p>
                     </div>
                 </div>
             </div>
-        </footer>
-        <!-- Modal -->
-        <div class="ts modals dimmer">
-            <dialog class="ts closable modal">
-                <i class="close icon"></i>
-                <div class="header"></div>
-                <div class="image content"></div>
-            </dialog>
         </div>
+    </footer>
     </div>
-    <script src="course.js"></script>
-    <script src="infor31.js"></script>
 </body>
+
 </html>
