@@ -12,6 +12,8 @@
     <meta property="og:url" content="https://infor.org/" />
     <meta property="og:image" content="https://infor.org/images/infor.png" />
     <meta property="og:description" content="新北市立板橋高級中學 New Taipei Municipal Banqiao Senior High School 資訊社 第三十屆" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
     <!-- Tocas UI：CSS 與元件 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocas-ui/2.3.3/tocas.css" /> 
     <!-- Tocas JS：模塊與 JavaScript 函式 -->
@@ -20,6 +22,38 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
     <link rel="stylesheet" href="./infor31.css">
+	
+	<style>
+.parallax {
+  /* The image used */
+  background-image: url("picture/img_parallax.jpg");
+
+  /* Set a specific height */
+  min-height: 300px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>
+<style>
+.parallax2 {
+  /* The image used */
+  background-image: url("picture/5.jpg");
+
+  /* Set a specific height */
+  min-height: 300px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>
+	
 	<script>
  function keyFunction() {
 	
@@ -40,9 +74,6 @@ function openCity(evt, cityName) {
     <div class="ts overlapped right sidebar vertical menu">
         <a class="right aligned item"><i class="close icon"></i></a>
     </div>
-
-    <div class="pusher">
-
         <div class="ts fluid secondary menu" id="bannerMenu">
             <div class="ts container">
                 <a class="item" href="https://www.pornhub.com/">INFOR</a>
@@ -65,13 +96,15 @@ function openCity(evt, cityName) {
         </header>
         <nav class="ts fluid pointing secondary menu" style="visibility: hidden;" id="defaultMenu">
         </nav>
-        <div class="ts fluid container" id="content">
             <section class="ts fluid container" id="clubIntro">
                 <div class="ts inner container">
                     <div class="ts huge center aligned header">
                         板中資訊社簡介
                         <div class="sub header">About us</div>
                     </div>
+					
+					<div class="parallax2"></div>
+					
                     <center><div class="ts stackable grid">
                         <nobr><div class="six wide column">
                             <img src="picture/mark.png" alt="introduce" class="introduce" style="weight:500px;height:400px;" />
@@ -95,6 +128,8 @@ function openCity(evt, cityName) {
 			<br>
 			<br>
 			<br>
+			<div class="parallax"></div>
+			
             <section class="ts fluid container" id="clubIntro">
                 <div class="ts inner container">
                     <div class="ts huge center aligned header">
